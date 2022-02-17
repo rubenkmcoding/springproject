@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pizza</title>
+    <link rel="icon" th:href="@{/images/ruben.ico}" type="image/x-icon">
+    <link rel="stylesheet" href="../static/CSS/ruben.css">
+    <head>
+        <title>Pizza's</title>
+        <link rel="icon" href="images/luigi.ico" type="image/x-icon">
+        <link rel="stylesheet" th:href="@{/css/ruben.css}" type="images/x-icon">
+        <img th:src="@{/images/homedesk.jpg}" alt="pizza" class="fullwidth">
+    </head>
+<body>
+<table id="pizzatabel"><!-- Je geeft de table de id pizzatabel. Je verwijst naar die id in luigi.css. -->
+    <thead>
+    <tr>
+        <th>Naam</th>
+        <th>Prijs</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="pizza : ${pizzas}" th:object="${pizza}">
+        <td th:text="*{naam}"></td>
+        <td th:text="*{prijs}" class="getal"></td>
+    </tr>
+    </tbody>
+</table> <!--th:each itereert over de elementen in de array pizzas.-->
+
+</body>
+</html>
