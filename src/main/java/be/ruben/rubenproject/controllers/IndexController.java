@@ -11,19 +11,16 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 
+// enkele imports.
 @Controller
-@RequestMapping("/") // associeert de controller met een URL van de website
- public class IndexController {
-    @GetMapping // de method wordt door spring opgeroepen en verwerkt de bijbehorende Get request.
-
+@RequestMapping("/")
+class IndexController {
+    @GetMapping
     public ModelAndView index() {
         var morgenOfMiddag = LocalTime.now().getHour() < 12 ? "morgen" : "middag";
+        return new ModelAndView("index", "moment", morgenOfMiddag);
 
-        var modelAndView = new ModelAndView("index","moment", morgenOfMiddag);
-        modelAndView.addObject("adres",
-        new Persoon("Ruben ", "Muanza", 7, true, LocalDate.of(1966, 1, 31),
-        new Adres("Grote markt", "3", 2300, "Turnhout")));
-        return modelAndView;
+    }
     }
 
-}
+

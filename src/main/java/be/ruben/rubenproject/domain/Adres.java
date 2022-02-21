@@ -19,18 +19,13 @@ public class Adres {
         return straat;
     }
 
-
-
     public String getHuisNr() {
         return huisNr;
     }
 
-
-
     public int getPostcode() {
         return postcode;
     }
-
 
     public String getGemeente() {
         return gemeente;

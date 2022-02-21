@@ -1,0 +1,47 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Pizza Ruben</title>-->
+<!--    <link rel="icon" href="../static/images/luigi.ico" type="image/x-icon">-->
+<!--    <link rel="stylesheet" href="../static/css/luigi.css">-->
+
+<!--</head>-->
+<!--<body>-->
+<!--<nav th:replace="fragments::menu"></nav>-->
+<!--<div xmlns:th="http://www.thymeleaf.org">-->
+<!--    <nav th:fragment="menu">-->
+<!--        <ul>-->
+<!--            <li><a th:href="@{/}">Welkom</a></li>-->
+<!--            <li><a th:href="@{/pizzas}">Pizza's</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+
+<!--    <head th:fragment="head(title)">-->
+<!--        <link rel="icon" href="../static/images/luigi.ico" type="image/x-icon">-->
+<!--        <title th:text="${title}"></title>-->
+<!--        <link rel="stylesheet" href="../static/css/luigi.css">-->
+<!--    </head>-->
+
+<!--    <table th:fragment="pizzaTabel(pizzas)" xmlns:th="http://www.thymeleaf.org"-->
+<!--           id="pizzatabel"> &lt;!&ndash;Je geeft de table de id pizzatabel. Je verwijst naar die id in ruben.css&ndash;&gt;-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <th>Naam</th>-->
+<!--            <th>Prijs</th>-->
+<!--            <th>Pikant</th>-->
+
+
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr th:each="pizza : ${pizzas}" th:object="${pizza}"> &lt;!&ndash; th:each itereert over de elementen in de array pizzas &ndash;&gt;-->
+<!--            <td><a th:text="*{naam}" th:href="@{/pizzas/{id}(id=*{id})}"></a></td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->

@@ -1,10 +1,10 @@
 body {
-    background-color: #4d4c4c;
+    background-color: #FFFFDE;
     font-family: sans-serif;
 }
 
 .roze {
-    background-color: #8f0707;
+    background-color: LightPink;
 }
 
 .blauw {
@@ -136,7 +136,7 @@ td {
 }
 
 td a {
-    color: #f10f0a;
+    color: black;
     text-decoration: none;
 }
 
