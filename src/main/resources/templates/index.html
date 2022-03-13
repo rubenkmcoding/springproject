@@ -1,10 +1,8 @@
 <!doctype html>
 <html lang="nl" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Pizza Luigi</title>
-    <link rel="icon" href="../static/images/luigi.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../static/css/luigi.css">
-</head>
+
+<head th:replace="fragments::head(title='Pizza Ruben')"></head>
+
 <body>
 <h1>Pizza Luigi</h1>
 <img src="../static/images/luigi.jpg" alt="pizza" class="fullwidth">

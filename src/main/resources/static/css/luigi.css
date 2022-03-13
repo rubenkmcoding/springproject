@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFFDE;
+    background-color: #1dc9f1;
     font-family: sans-serif;
 }
 
@@ -40,7 +40,7 @@ label span, .fout {
 }
 
 .boodschap {
-    background-color: green;
+    background-color: #603ca6;
     border-bottom-right-radius: 0.5em;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
@@ -74,7 +74,7 @@ input[type='checkbox'] {
 }
 
 nav ul {
-    background-color: #3e8e41;
+    background-color: #3566a6;
     padding: 0.4em 0;
 }
 
@@ -95,7 +95,7 @@ nav li a:hover {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #c45af1;
     border: none;
     color: white;
     cursor: pointer;
@@ -105,11 +105,11 @@ button {
 }
 
 button:hover {
-    background-color: #3e8e41;
+    background-color: #8f0707;
 }
 
 button:active {
-    background-color: #3ecc41;
+    background-color: #4d4c4c;
 }
 
 button:disabled {
@@ -127,7 +127,7 @@ th {
 
 th {
     color: white;
-    background-color: #4CAF50;
+    background-color: #684caf;
 }
 
 td {
